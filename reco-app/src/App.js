@@ -80,7 +80,6 @@ function App() {
             >
               {" "}
               <div style={{ fontSize: "larger" }}> {book} </div>
-              {/* <div style={{ fontSize: "smaller" }}> {book.rating} </div> */}
             </li>
           ))}
         </ul>
