@@ -62,6 +62,29 @@ function App() {
           </button>
         ))}
       </div>
+      <hr />
+
+      <div style={{ textAlign: "left" }}>
+        <ul style={{ paddingInlineStart: "0" }}>
+          {dB[selectedGenre].map((book) => (
+            <li
+              key={book}
+              style={{
+                listStyle: "none",
+                padding: "1rem",
+                border: "1px solid #D1D5DB",
+                width: "70%",
+                margin: "1rem 0rem",
+                borderRadius: "0.5rem",
+              }}
+            >
+              {" "}
+              <div style={{ fontSize: "larger" }}> {book} </div>
+              {/* <div style={{ fontSize: "smaller" }}> {book.rating} </div> */}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
