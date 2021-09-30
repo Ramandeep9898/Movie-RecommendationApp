@@ -64,22 +64,30 @@ function App() {
       </div>
       <hr />
 
-      <div style={{ textAlign: "left" }}>
-        <ul style={{ paddingInlineStart: "0" }}>
+      <div style={{ textAlign: "centre" }}>
+        <ul>
           {dB[selectedGenre].map((book) => (
             <li
               key={book}
               style={{
+                textAlign: "center",
                 listStyle: "none",
-                padding: "1rem",
+                padding: "0.8rem",
                 border: "1px solid #D1D5DB",
-                width: "70%",
-                margin: "1rem 0rem",
+                width: "30%",
+                margin: "1rem 30%",
                 borderRadius: "0.5rem",
               }}
             >
               {" "}
-              <div style={{ fontSize: "larger" }}> {book} </div>
+              <div
+                style={{
+                  textAlign: "center",
+                  fontSize: "larger",
+                }}
+              >
+                {book}
+              </div>
             </li>
           ))}
         </ul>
