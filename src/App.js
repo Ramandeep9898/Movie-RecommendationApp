@@ -3,37 +3,51 @@ import { useState } from "react";
 import "./App.css";
 const dB = {
   tvShows: [
-    "Friends",
-    "Big Bang Theory",
-    "Riverdale",
-    "Sherlock",
-    "Kota-Factory",
+    { name: "Friends", rating: "4/5" },
+    { name: "Big Bang Theory", rating: "3.5/5" },
+    { name: "Riverdale", rating: "4/5" },
+    { name: "Sherlock", rating: "3.5/5" },
+    { name: "Kota-Factory", rating: "3.5/5" }
+
+    
   ],
-  amine: ["Naruto", "DeathNote", "Demon Slayer", "A Silent Voice"],
+  amine: [
+     { name: "Naruto", rating: "4/5" },
+     { name: "DeathNote", rating: "3.5/5" },
+     { name: "Demon Slayer", rating: "4/5" },
+     { name: "A Silent Voice", rating: "3.5/5" },
+   
+  ],
   fcition: [
-    "Edge of Tommorrow",
-    "Watchman",
-    "Venom",
-    "Black Widow",
-    "Shang-chii",
-    "Loki",
+    { name: "Edge of Tommorrow", rating: "4/5" },
+    { name: "Watchman", rating: "3.5/5" },
+    { name: "Venom", rating: "4/5" },
+    { name: "Black Widow", rating: "3.5/5" },
+    { name: "Shang-chii", rating: "3.5/5" },
+    { name: "Loki", rating: "3.5/5" },
+
+
+
+
   ],
   horror: [
-    "Fear Street 1,2,3",
-    "Orphan",
-    "Dpctor Sleep",
-    "Hunting of hill house",
-    "Hunting of Bly Monor",
+    { name: "Fear Street 1,2,3 ", rating: "4/5" },
+    { name: "Orphan", rating: "3.5/5" },
+    { name: "Doctor Sleep", rating: "4/5" },
+    { name: "Hunting of hill house", rating: "3.5/5" },
+    { name: "Hunting of Bly Monor", rating: "3.5/5" },
+    
   ],
   myFav: [
-    "Friends",
-    "Loki",
-    "Wanda Vision",
-    "Kota-factory",
-    "You",
-    "Vampire Daries",
-    "Sex Education",
-    "locke & key",
+    { name: "Friends", rating: "4/5" },
+    { name: "Loki", rating: "3.5/5" },
+    { name: "Wanda Vision", rating: "4/5" },
+    { name: "Kota-factory", rating: "3.5/5" },
+    { name: "You", rating: "3.5/5" },
+    { name: "Vampire Daries", rating: "4/5" },
+    { name: "Sex Education", rating: "3.5/5" },
+    { name: "locke & key", rating: "3.5/5" },
+
   ],
 };
 function App() {
@@ -86,7 +100,11 @@ function App() {
                   fontSize: "larger",
                 }}
               >
-                {book}
+                {/* {book.name}
+                {book.rating} */}
+                
+              <div style={{ fontSize: "larger" }}> {book.name} </div>
+              <div style={{ fontSize: "smaller" }}> {book.rating} </div>
               </div>
             </li>
           ))}
